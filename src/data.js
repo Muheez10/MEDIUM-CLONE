@@ -7,19 +7,15 @@ const friendList = [
         chat:[
             {
                 name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"How are you 1 ",
                 time:"23:00"
             },
             {
                 name:"shield",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"I am fine 1",
                 time:"23:00"
             },
-            {
-                name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
-                time:"23:00"
-            },
+            
         ]
     },
     {
@@ -30,19 +26,15 @@ const friendList = [
         chat:[
             {
                 name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"How are you 2 ",
                 time:"23:00"
             },
             {
                 name:"toykam",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"I am fine 2",
                 time:"23:00"
-            },
-            {
-                name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
-                time:"23:00"
-            },
+            }
+            
         ]
     },
     {
@@ -53,19 +45,15 @@ const friendList = [
         chat:[
             {
                 name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:" How are you 3",
                 time:"23:00"
             },
             {
                 name:"al-ayyubi",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"I am fine 3 ",
                 time:"23:00"
             },
-            {
-                name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
-                time:"23:00"
-            },
+            
         ]
     },
     {
@@ -76,19 +64,15 @@ const friendList = [
         chat:[
             {
                 name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"How are you 4 ",
                 time:"23:00"
             },
             {
                 name:"ay",
-                msg:"jdlc;dc lndsldl;sjdlks ",
+                msg:"I am fine 4 ",
                 time:"23:00"
             },
-            {
-                name:"you",
-                msg:"jdlc;dc lndsldl;sjdlks ",
-                time:"23:00"
-            },
+           
         ]
     },
 ]

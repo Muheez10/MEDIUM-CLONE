@@ -8,8 +8,87 @@ body {
 }
 
 .chat-input-box{
-  width: 65%;
+  width: 64%;
+ 
 }
 .chat-screen-box{
-  height: fit-content;
+  height: 100%;
+  width: 65%;
+  background-image: url('whatsapp.jpg');
 }
+
+.input-group-text{
+  color: white;
+}
+
+.high{
+  color: black;
+  margin-top:30px;
+  
+}
+
+.lastpart{
+  border-radius: 0rem;
+  padding-right: 8px;
+}
+
+.something{
+  background-color:rgb(195, 255, 195);
+}
+
+.whatsapp2{
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.list-group-item.active{
+  background-color:#198754;
+  border-color:whitesmoke;
+}
+
+ /* .new{
+  background-color: #198754;
+  height: auto;
+  width: auto;
+  color: white;
+  padding-top: 2px;
+  float: left;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.new2{
+  background-color: #198754;
+  height: auto;
+  width: auto;
+  color: white;
+  padding-top: 3px;
+  margin-top: 3.5pc;
+  margin-right: 10px;
+  float: right;
+  border-radius: 5px;
+}
+
+.new3{
+  background-color: #198754;
+  height: auto;
+  width: auto;
+  color: white;
+  padding-top: 3px;
+  margin-top: 5.5pc;
+  margin-left: -2.7pc;
+  float: left;
+  border-radius: 5px;
+}  */
+
+
+.force{
+  background-color: #198754;
+  border-radius: 5px;
+  color: white;
+  width: auto;
+  padding: 5px;
+  font-family:cursive ;
+}
+
+

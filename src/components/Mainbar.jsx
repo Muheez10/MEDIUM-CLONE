@@ -1,20 +1,46 @@
-import React from 'react'
-import '../index.css'
+import React,{useState} from 'react';
+import '../index.css';
+import { useRecoilState } from 'recoil';
+import { chat } from './State'
+
 
 const Mainbar = () => {
+  const [message, setmessage] = useState("")
+  const [friendChat,setFriendChat]= useRecoilState(chat)
+  const handleSendMessage =()=> {
+    const msgObj ={
+      name:'you',
+      msg:message,
+      time:'19:46'
+    }
+    setFriendChat(data=>([...data, msgObj]))
+    setmessage('')
+  }
+  
     return (
       <div className="container p-5">
-        <div className="position-fixed top-30 chat-screen-box p-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis! Quidem deleniti, voluptas soluta animi tempora ut ducimus! Ex saepe vitae maiores fugit cumque eius eveniet incidunt nemo natus est.
+        <div className="position-fixed top-20 chat-screen-box p-0">
+            {friendChat.map( (item, index) =>{   
+              return(
+                <div className={`${item.name === "you" ? "mt-1 d-flex justify-content-end" : "mt-4 mb-3 d-flex justify-content-start"} p-1 `}>
+                  <div className="force"
+                  key={index}>{item.msg}</div>  
+                </div>
+            )})}
         </div>
         <div className="position-fixed bottom-0 top-90 chat-input-box">
-          <div className="input-group mb-3">
-            <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-            <span className="input-group-text" id="basic-addon2">Send</span>
+           <form onSubmit={handleSendMessage}>
+          <div className="input-group mb-2">
+             <input type='text' className="form-control" placeholder="Type a message" value={message}
+              aria-label="Recipient's username" aria-describedby="basic-addon2" onChange={ (e) => setmessage(e.target.value)} />
+             <button className="btn btn-outline-success lastpart" type="submit">Send</button>
           </div>
+           </form>
         </div>
       </div>
     )
-}
-
-export default Mainbar
+  }
+  
+  export default Mainbar
+  
+  //<span className="input-group-text bg-primary" id="basic-addon2">Send</span>

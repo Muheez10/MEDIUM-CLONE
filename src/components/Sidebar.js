@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
+import { useRecoilState } from 'recoil'
 import { friendList } from '../data'
+import { chat } from './State'
 
 const Sidebar = () => {
   const [index, setIndex] = useState()
-  const [chat, setChat] = useState([])
   const handleChangeChat = (id) =>{
     const ch = friendList[id].chat
     setIndex(id)
-    setChat(ch)
+    setFriendChat(ch)
   } 
+  const [friendChat,setFriendChat]= useRecoilState(chat)
     return (
       <div>
         <a href="/" className="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
